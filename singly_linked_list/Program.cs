@@ -33,6 +33,18 @@ namespace singly_linked_list
             nm = Console.ReadLine();
             Node newnode = new Node();
             newnode.name = nm;
+            //if the node to be inserted in the first node
+            if (START == null || nim <= START.rollNumber)
+            {
+                if ((START != null) && (nim == START.rollNumber))
+                {
+                    Console.WriteLine("\nDuplicate roll numbers not allowes\n");
+                        return;
+                }
+                newnode.next = START;
+                START = newnode;
+                return;
+            }
         }
 
     }
