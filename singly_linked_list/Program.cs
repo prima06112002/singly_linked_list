@@ -14,4 +14,14 @@ namespace singly_linked_list
         public string name;
         public node next;
     }
+    class List
+    {
+        node START;
+
+        public List()
+        {
+            START = null;
+        }
+
+    }
 }
