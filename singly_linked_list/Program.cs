@@ -170,7 +170,18 @@ namespace singly_linked_list
                                 obj.traverse();
                             }
                             break;
-
+                        case '4':
+                            {
+                                if (obj.listEmpty() == true)
+                                {
+                                    Console.WriteLine("\nList is empty");
+                                    break ;
+                                }
+                                Node previous, current;
+                                previous = current = null;
+                                Console.Write("\nEnter roll number of the " +
+                                    "student whose record is to be searched: ");
+                            }
                     }
                 }
             }
