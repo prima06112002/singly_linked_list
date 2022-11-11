@@ -24,7 +24,7 @@ namespace singly_linked_list
         {
             START = null;
         }
-        
+
         public void addNote() // add a node in the list
         {
             int nim;
@@ -41,7 +41,7 @@ namespace singly_linked_list
                 if ((START != null) && (nim == START.rollNumber))
                 {
                     Console.WriteLine("\nDuplicate roll numbers not allowes\n");
-                        return;
+                    return;
                 }
                 newnode.next = START;
                 START = newnode;
@@ -58,7 +58,7 @@ namespace singly_linked_list
                 if (nim == current.rollNumber)
                 {
                     Console.WriteLine("\nDuplicate roll numbers not allowed\n");
-                    return ;
+                    return;
                 }
                 previous = current;
                 current = current.next;
@@ -82,7 +82,7 @@ namespace singly_linked_list
                     Console.Write(currentNode.rollNumber + " " + currentNode.name + "\n");
 
                 Console.WriteLine();
-            }   
+            }
         }
         public bool delNode(int nim)
         {
@@ -94,7 +94,7 @@ namespace singly_linked_list
             previous.next = current.next;
             if (current == START)
                 START = START.next;
-            return true; 
+            return true;
         }
         public bool Search(int nim, ref Node previous, ref Node current)
         {
@@ -118,9 +118,21 @@ namespace singly_linked_list
                 return true;
             else
                 return false;
-
-
         }
 
     }
+    class Program
+    {
+        //chech wheter specified node is present in the list or not
+
+        static void Main(string[] args)
+        {
+            List obj = new List();
+            while (true)
+            {
+                
+            }
+        }
+    }
 }
+
