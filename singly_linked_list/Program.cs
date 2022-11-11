@@ -142,7 +142,21 @@ namespace singly_linked_list
                     char ch = Convert.ToChar(Console.ReadLine());
                     switch (ch)
                     {
-                        
+                        case '1':
+                            {
+                                obj.addNote();
+                            }
+                            break;
+                        case '2':
+                            {
+                                if (obj.listEmpty())
+                                {
+                                    Console.WriteLine("\nList empty");
+                                    break;
+                                }
+                                Console.Write("\nEnter the roll number of" +
+                                     " the student whose record is to be delated :");
+                            }
                     }
                 }
             }
