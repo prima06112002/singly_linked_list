@@ -181,7 +181,17 @@ namespace singly_linked_list
                                 previous = current = null;
                                 Console.Write("\nEnter roll number of the " +
                                     "student whose record is to be searched: ");
+                                int num = Convert.ToInt32(Console.ReadLine());
+                                if (obj.Search(num, ref previous, ref current) == false)
+                                    Console.WriteLine("\nRecord not found.");
+                                else
+                                {
+                                    Console.WriteLine("\nRecord found");
+                                    Console.WriteLine("\nRoll number: " + current.rollNumber);
+                                    Console.WriteLine("\nName " + current.name);
+                                }
                             }
+                            break;;
                     }
                 }
             }
