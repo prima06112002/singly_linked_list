@@ -6,10 +6,5 @@ using System.Threading.Tasks;
 
 namespace singly_linked_list
 {
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-        }
-    }
+    // each node consist of the information part and lik to to the next mode
 }
