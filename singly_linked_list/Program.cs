@@ -114,7 +114,11 @@ namespace singly_linked_list
 
         public bool listEmpty()
         {
-            return true;
+            if (START == null)
+                return true;
+            else
+                return false;
+
 
         }
 
